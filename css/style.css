@@ -330,7 +330,7 @@ template {
   height: 80vh;
   position: relative;
   width: 100%; }
-  .header--left {
+  .header__left {
     background-color: #db5461;
     -webkit-clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
     clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
@@ -338,8 +338,20 @@ template {
     width: 60%;
     z-index: 999;
     top: 0;
-    left: 0; }
-  .header--right {
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+  .header__heading {
+    font-size: 4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 7rem; }
+    .header__heading--emphasis {
+      color: #30343f;
+      font-weight: bold; }
+  .header__right {
     background-image: url("../img/background_header.jpg");
     height: 100%;
     width: 50%;
