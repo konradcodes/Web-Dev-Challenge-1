@@ -340,7 +340,7 @@ template {
     top: 0;
     left: 0; }
   .header--right {
-    background-image: url(/img/background_header.jpg);
+    background-image: url("../img/background_header.jpg");
     height: 100%;
     width: 50%;
     position: absolute;
