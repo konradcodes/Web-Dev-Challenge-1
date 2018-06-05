@@ -418,7 +418,8 @@ template {
         margin-left: 1rem; } }
     @media only screen and (max-width: 19.375em) {
       .header__heading {
-        font-size: 1.8rem; } }
+        font-size: 1.8rem;
+        margin-top: 12rem; } }
   .header__right {
     background-image: url("../img/background_header.jpg");
     height: 100%;
@@ -450,6 +451,10 @@ template {
     @media only screen and (max-width: 28.125em) {
       .header__logo-box {
         top: 10rem; } }
+    @media only screen and (max-width: 23.75em) {
+      .header__logo-box {
+        top: 12rem;
+        left: 1rem; } }
   .header__logo {
     height: 5rem; }
     @media only screen and (max-width: 38.75em) {
