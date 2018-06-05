@@ -540,7 +540,7 @@ template {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: flex-start; }
     @media only screen and (max-width: 38.75em) {
       .items__description {
         justify-content: center;
