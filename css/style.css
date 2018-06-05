@@ -481,7 +481,8 @@ template {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding: 1rem 1rem; } }
+        padding: 1rem 1rem;
+        width: 100%; } }
     .header__navbar ul {
       list-style-type: none;
       display: flex;
