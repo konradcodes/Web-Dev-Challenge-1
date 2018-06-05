@@ -384,6 +384,9 @@ template {
     display: flex;
     justify-content: flex-start;
     align-items: center; }
+    @media only screen and (max-width: 28.125em) {
+      .header__left {
+        width: 80%; } }
   .header__heading {
     font-size: 4rem;
     font-weight: 400;
@@ -406,6 +409,16 @@ template {
     @media only screen and (max-width: 38.75em) {
       .header__heading {
         font-size: 2.5rem; } }
+    @media only screen and (max-width: 34.375em) {
+      .header__heading {
+        font-size: 2rem;
+        margin-left: 2rem; } }
+    @media only screen and (max-width: 23.75em) {
+      .header__heading {
+        margin-left: 1rem; } }
+    @media only screen and (max-width: 19.375em) {
+      .header__heading {
+        font-size: 1.8rem; } }
   .header__right {
     background-image: url("../img/background_header.jpg");
     height: 100%;
@@ -416,6 +429,9 @@ template {
     z-index: -1;
     background-size: cover;
     background-position: top; }
+    @media only screen and (max-width: 38.75em) {
+      .header__right {
+        background-position: center; } }
   .header__logo-box {
     position: absolute;
     top: 7rem;
@@ -428,8 +444,17 @@ template {
       .header__logo-box {
         left: 2rem;
         top: 10rem; } }
+    @media only screen and (max-width: 34.375em) {
+      .header__logo-box {
+        top: 7rem; } }
+    @media only screen and (max-width: 28.125em) {
+      .header__logo-box {
+        top: 10rem; } }
   .header__logo {
     height: 5rem; }
+    @media only screen and (max-width: 38.75em) {
+      .header__logo {
+        height: 4rem; } }
   .header__navbar {
     text-decoration: none;
     position: absolute;
@@ -467,6 +492,10 @@ template {
       margin: 1rem;
       font-weight: bolder;
       transition: all 0.2s; }
+      @media only screen and (max-width: 19.375em) {
+        .header__navbar li {
+          font-size: 1.3rem;
+          margin: 0.7rem; } }
     .header__navbar a {
       text-decoration: none;
       color: #30343f;
@@ -483,7 +512,8 @@ template {
   @media only screen and (max-width: 38.75em) {
     .items {
       flex-direction: column;
-      justify-content: space-around; } }
+      justify-content: space-around;
+      padding: 1rem 5rem; } }
   .items__box {
     display: flex;
     justify-content: center;
@@ -493,7 +523,7 @@ template {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        margin: 1rem 4rem; } }
+        margin: 1rem; } }
   .items__icon {
     height: 4rem;
     margin: 2rem; }
@@ -510,7 +540,7 @@ template {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start; }
+    align-items: center; }
     @media only screen and (max-width: 38.75em) {
       .items__description {
         justify-content: center;
@@ -530,6 +560,10 @@ template {
   transition: all 0.3s;
   backface-visibility: hidden;
   animation: fromBottom 2s ease-out; }
+  @media only screen and (max-width: 38.75em) {
+    .header__button {
+      font-size: 1.7rem;
+      padding: 0.7rem 1.7rem; } }
   .header__button:hover {
     transform: translateY(-0.8rem);
     box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.6); }
