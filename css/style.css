@@ -326,6 +326,36 @@ template {
 [hidden] {
   display: none; }
 
+@keyframes fromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem); }
+  70% {
+    opacity: 1;
+    transform: translateY(1rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes fromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes fromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem); }
+  70% {
+    opacity: 1;
+    transform: translateY(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
 .header {
   height: 80vh;
   position: relative;
@@ -348,7 +378,8 @@ template {
     font-weight: 400;
     text-transform: uppercase;
     color: #fff;
-    margin-left: 7rem; }
+    margin-left: 7rem;
+    animation: fromLeft 1s ease-out; }
     .header__heading--emphasis {
       color: #30343f;
       font-weight: bold; }
@@ -365,7 +396,8 @@ template {
   .header__logo-box {
     position: absolute;
     top: 7rem;
-    left: 7rem; }
+    left: 7rem;
+    animation: fromTop 2s ease-out; }
   .header__logo {
     height: 5rem; }
   .header__button {
@@ -380,7 +412,8 @@ template {
     box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
     outline: none;
     transition: all 0.3s;
-    backface-visibility: hidden; }
+    backface-visibility: hidden;
+    animation: fromBottom 2s ease-out; }
     .header__button:hover {
       transform: translateY(-0.8rem);
       box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.6); }
@@ -397,20 +430,22 @@ template {
     padding: 1rem 2rem;
     box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.5);
     text-align: center;
-    cursor: pointer; }
+    backface-visibility: hidden; }
     .header__navbar ul {
       list-style-type: none;
       display: flex;
-      text-align: center; }
+      text-align: center;
+      cursor: pointer; }
     .header__navbar li {
       font-size: 1.7rem;
       margin: 1rem;
       font-weight: bolder;
-      transition: all 0.2s;
-      display: inline-block; }
+      transition: all 0.2s; }
     .header__navbar a {
       text-decoration: none;
-      color: #30343f; }
+      color: #30343f;
+      transition: all 0.3s;
+      transform-origin: left; }
       .header__navbar a:hover {
         color: #db5461; }
 
